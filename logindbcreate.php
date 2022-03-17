@@ -16,9 +16,9 @@ if($mysqli === false){
 }
 $sql = "CREATE DATABASE if not exists logininfo";
 if($mysqli->query($sql) === true){
-    echo "Database created successfully";
+    echo "";
 } else{
-    echo "ERROR: Could not able to execute $sql. " . $mysqli->error;
+    echo "ERROR: Was not able to execute $sql. " . $mysqli->error;
 }
  
 $mysqli->close();
