@@ -68,7 +68,7 @@
          
      .container {   
             padding: 25px;   
-            background-color: lightblue;
+   
             opacity: 0.6;  
         }   
     </style> 
