@@ -3,6 +3,34 @@
 <head>  
 <meta name="viewport" content="width=device-width, initial-scale=1">  
 <title> Login Page </title>  
+
+<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+</head>
+ 
+<body>
+    
+  <section class="sub-header">
+  <nav>
+      <a href="homepage.html"> <img src="https://i.postimg.cc/qRXHLvh4/Pngtree-coffee-logo-5898135.png"> </a>
+	  
+	  <div class="nav-links">
+	  
+	  <ul>
+	  <li> <a href="homepage.html">HOME</a> </li>
+	  <li> <a href="menu.html">MENU</a> </li>
+	  <li> <a href="login.php">LOGIN</a> </li>
+	  <li> <a href="signup.php">SIGN UP</a> </li>
+          <li> <a href="">BOOK NOW</a> </li>
+	  <li> <a href="">CONTACT</a> </li>
+	  </ul>
+	  
+  </nav>
+
+
+
 <style>   
     Body {  
       font-family: 'Raleway', sans-serif;  
@@ -56,7 +84,7 @@
             <button type="submit">Login</button>   
             <input type="checkbox" checked="checked"> Remember me   
             <button type="button" class="cancelbtn"> Cancel</button>   
-            Forgot <a href="#"> password? </a>   
+           
         </div>   
     </form>     
 </body>     
