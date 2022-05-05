@@ -119,11 +119,11 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 	  
 	  <ul>
 	  <li> <a href="homepage.html">HOME</a> </li>
-	  <li> <a href="menu.html">MENU</a> </li>
+	  <li> <a href="menu2.html">MENU</a> </li>
 	  <li> <a href="login.php">LOGIN</a> </li>
 	  <li> <a href="signup.php">SIGN UP</a> </li>
-          <li> <a href="">BOOK NOW</a> </li>
-	  <li> <a href="">CONTACT</a> </li>
+          <li> <a href="book1.html">BOOK NOW</a> </li>
+	  <li> <a href="contact.html">CONTACT</a> </li>
 	  </ul>
 	  
   </nav>
