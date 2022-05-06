@@ -4,14 +4,15 @@ define('DB_USERNAME', 'root');
 define('DB_PASSWORD', '');
 define('DB_NAME', 'logininfo');
 
+
 $mysqli = new mysqli(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME);
 
  
 // Check connection
 if($mysqli === true){
-    echo "";
+    echo "Connnected to the database";
 }
-if($mysqli === false){
+if($mysqli->connect_error){
     die("ERROR: Could not connect. " . $mysqli->connect_error);
 }
 
@@ -22,6 +23,9 @@ if($mysqli->query($sql) === true){
 } else{
     echo "ERROR: Could not able to execute $sql. " . $mysqli->error;
 }
+
+
+
+
  
-$mysqli->close();
 ?>
