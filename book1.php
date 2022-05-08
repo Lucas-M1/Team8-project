@@ -20,10 +20,12 @@ require_once "bookdbcreate.php";
         
         <ul>
         <li> <a href="homepage.html">HOME</a> </li>
-        <li> <a href="menu.html">MENU</a> </li>
-        <li> <a href="login.php">LOGIN</a> </li>
-        <li> <a href="book1.php">BOOK NOW</a> </li>
+      <li> <a href="menu2.html">MENU</a> </li>
+      <li> <a href="login.php">LOGIN</a> </li>
+      <li> <a href="signup.php">SIGN UP</a> </li>
+            <li> <a href="book1.php">BOOK NOW</a> </li>
       <li> <a href="Contact.html">CONTACT</a> </li>
+        <li> <a href="about us.html">ABOUT US</a> </li>
         </ul>
         
     </nav>
@@ -31,9 +33,7 @@ require_once "bookdbcreate.php";
     // (A) PROCESS booking
     if (isset($_POST["date"])) {
       require "booking.php";
-      if ($_bk->save(
-        $_POST["date"], $_POST["slot"], $_POST["name"],
-        $_POST["email"], $_POST["ppl"])) {
+      if ($_bk->save($_POST["date"], $_POST["slot"], $_POST["name"],   $_POST["email"], $_POST["ppl"])) {
         echo "<div class='ok'>Reservation saved.</div>";
       } else { echo "<div class='err'>".$_bk->error."</div>"; }
     }
@@ -61,11 +61,11 @@ require_once "bookdbcreate.php";
 
 <div class="field">
 <p>Your Name</p>
-<input type="text" required name="name" placeholder="Name"/>
+<input type="text" name="name" placeholder="Name"/>
 </div>
 <div class="field">
 <p>Your email</p>
-<input type="email" required name="email" placeholder="Email"/>
+<input type="email" name="email" placeholder="Email"/>
 </div>
 
 <?php
@@ -75,8 +75,7 @@ require_once "bookdbcreate.php";
       ?>
 <div class="field">
 <p>Date</p>
-<input type="date" required id="bk_date" name="date"
-             min="<?=$mindate?>">
+<input type="date"  name="date"> <? //required id ?>
 </div>
 
 <div class="field">
@@ -86,7 +85,7 @@ require_once "bookdbcreate.php";
 
 <div class="field">
 <p>Number of people</p>
-<select required name="ppl" id="#">
+<select name="ppl" id="#">
 <option value="1">1 person</option>
 <option value="2">2 people</option>
 <option value="3">3 people</option>
