@@ -6,7 +6,7 @@ CREATE TABLE `bookinfo` (
   `bk_email` varchar(255) NOT NULL,
   `bk_tel` varchar(60) NOT NULL,
   `bk_notes` text DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ;
 
 ALTER TABLE `bookings`
   ADD PRIMARY KEY (`bk_id`),
