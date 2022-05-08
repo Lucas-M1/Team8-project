@@ -32,7 +32,7 @@ require_once "bookdbcreate.php";
 <?php
     // (A) PROCESS booking
     if (isset($_POST["date"])) {
-      require "booking.php";
+      require_once "booking.php";
       if ($_bk->save($_POST["date"], $_POST["slot"], $_POST["name"],   $_POST["email"], $_POST["ppl"])) {
         echo "<div class='ok'>Reservation saved.</div>";
       } else { echo "<div class='err'>".$_bk->error."</div>"; }

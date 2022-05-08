@@ -122,8 +122,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 	  <li> <a href="menu2.html">MENU</a> </li>
 	  <li> <a href="login.php">LOGIN</a> </li>
 	  <li> <a href="signup.php">SIGN UP</a> </li>
-          <li> <a href="book1.html">BOOK NOW</a> </li>
+          <li> <a href="book1.php">BOOK NOW</a> </li>
 	  <li> <a href="contact.html">CONTACT</a> </li>
+      <li> <a href="about us.html">ABOUT US</a> </li>
 	  </ul>
 	  
   </nav>
